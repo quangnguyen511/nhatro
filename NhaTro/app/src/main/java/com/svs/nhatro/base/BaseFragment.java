@@ -47,23 +47,23 @@ public abstract class BaseFragment extends Fragment implements ApiResponseListen
             resultListener.onFragmentForResult(mCodeRequest, bundle);
     }
 
-    public void setActionBarBack(View view, String title) {
-        if (getActivity() instanceof BaseActivity) {
-            ((BaseActivity) getActivity()).setActionBarBack(view, title);
-        }
-    }
-
-    public void setActionBarClose(View view, String title) {
-        if (getActivity() instanceof BaseActivity) {
-            ((BaseActivity) getActivity()).setActionBarClose(view, title);
-        }
-    }
-
-    public void setActionBarTitle(View view, String title) {
-        if (getActivity() instanceof BaseActivity) {
-            ((BaseActivity) getActivity()).setActionBarTitle(view, title);
-        }
-    }
+//    public void setActionBarBack(View view, String title) {
+//        if (getActivity() instanceof BaseActivity) {
+//            ((BaseActivity) getActivity()).setActionBarBack(view, title);
+//        }
+//    }
+//
+//    public void setActionBarClose(View view, String title) {
+//        if (getActivity() instanceof BaseActivity) {
+//            ((BaseActivity) getActivity()).setActionBarClose(view, title);
+//        }
+//    }
+//
+//    public void setActionBarTitle(View view, String title) {
+//        if (getActivity() instanceof BaseActivity) {
+//            ((BaseActivity) getActivity()).setActionBarTitle(view, title);
+//        }
+//    }
 
 //    public void setCurrentUser(UserModel user) {
 //        if (getActivity() instanceof BaseActivity) {

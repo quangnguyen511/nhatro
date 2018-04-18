@@ -5,10 +5,6 @@ package com.svs.nhatro.base;
 
 import android.app.Application;
 
-import com.svs.nhatro.R;
-
-import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
-
 public class BaseApplication extends Application {
 
     @Override
