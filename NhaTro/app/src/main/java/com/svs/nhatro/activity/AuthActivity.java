@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import com.svs.nhatro.R;
 import com.svs.nhatro.base.BaseActivity;
+import com.svs.nhatro.fragment.authentication.LoginFragment;
 
 public class AuthActivity extends BaseActivity {
 
@@ -11,5 +12,6 @@ public class AuthActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
+        replaceFragment(new LoginFragment(), false);
     }
 }

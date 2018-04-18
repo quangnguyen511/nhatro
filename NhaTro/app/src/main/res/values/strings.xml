@@ -6,4 +6,25 @@
     <string name="error">Error</string>
     <string name="error_server">Error retrieving information from server</string>
     <string name="error_parse_type"><![CDATA[Value <!DOCTYPE of type]]></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_email">Đăng nhập với Email</string>
+    <string name="login_google">Đăng nhập với Google</string>
+    <string name="login_facebook">Đăng nhập với Facebook</string>
+    <string name="login">Đăng Nhập</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="signup_email">Đăng ký với Email</string>
+    <string name="input_email">Nhập email</string>
+    <string name="empty_email_password">Vui lòng nhập email và mật khẩu</string>
+    <string name="valid_input_email">Vui lòng nhập đúng định dạng Email</string>
+    <string name="alert">Thông Báo</string>
+    <string name="signup">Đăng ký</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="first_name">Tên</string>
+    <string name="last_name">Họ</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="empty_input">Vui lòng nhập đầy đủ thông tin</string>
 </resources>

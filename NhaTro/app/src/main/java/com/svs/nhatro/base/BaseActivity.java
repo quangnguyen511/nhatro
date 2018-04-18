@@ -3,6 +3,7 @@ package com.svs.nhatro.base;
  * Created by QuangNguyen on 16/04/2018.
  */
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -63,6 +64,12 @@ public abstract class BaseActivity extends AppCompatActivity implements ApiRespo
         super.onCreate(savedInstanceState);
         ApiBaseHandler mBaseHandler = new ApiBaseHandler(this, this);
         mApiClient = new ApiClient(mBaseHandler.requestListener, (BaseApplication) getApplication());
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+        ActionBar actionBar = getActionBar();
+        if (actionBar != null)
+            actionBar.hide();
     }
 
     public void showLoading() {

@@ -7,5 +7,18 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="editText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_height">@dimen/_40dp</item>
+        <item name="android:background">@drawable/shape_black_opacity_radius</item>
+    </style>
+    <style name="button">
+        <item name="android:background">@drawable/shape_yellow_radius</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_height">@dimen/_30dp</item>
+    </style>
 </resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="font_gothic_regular">fonts/CenturyGothic.ttf</string>
+    <string name="font_gothic_bold">fonts/CenturyGothic-Bold.ttf</string>
+</resources>

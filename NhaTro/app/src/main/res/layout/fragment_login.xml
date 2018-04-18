@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_42dp"
+    android:paddingEnd="@dimen/_16dp"
+    android:paddingStart="@dimen/_16dp"
+    android:paddingTop="@dimen/_42dp"
+    tools:context="com.svs.nhatro.fragment.authentication.LoginFragment"
+    tools:ignore="RtlSymmetry">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_42dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_53dp"
+            android:src="@drawable/img_logo" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/fragLogin_tvFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:background="@drawable/shape_blue_radius"
+        android:drawableStart="@drawable/ic_fb"
+        android:gravity="center"
+        android:paddingStart="@dimen/_16dp"
+        android:text="@string/login_facebook"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/fragLogin_tvGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:layout_marginTop="@dimen/_12dp"
+        android:background="@drawable/shape_white_radius"
+        android:drawableStart="@drawable/ic_google"
+        android:gravity="center"
+        android:paddingStart="@dimen/_16dp"
+        android:text="@string/login_google" />
+
+    <TextView
+        android:id="@+id/fragLogin_tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:layout_marginTop="@dimen/_12dp"
+        android:background="@drawable/shape_black_opacity_radius"
+        android:drawableStart="@drawable/ic_smartphone"
+        android:gravity="center"
+        android:paddingStart="@dimen/_16dp"
+        android:text="@string/login_email"
+        android:textColor="@color/white" />
+</LinearLayout>

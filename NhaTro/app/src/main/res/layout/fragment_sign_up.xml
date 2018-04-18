@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/charcoalGrey60"
+    android:orientation="vertical"
+    android:padding="@dimen/_16dp"
+    tools:context="com.svs.nhatro.fragment.authentication.SignUpFragment"
+    tools:ignore="MissingPrefix">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="@dimen/_20dp"
+        android:layout_height="@dimen/_20dp"
+        android:src="@drawable/ic_arrow_left" />
+
+    <TextView
+        fontPath="@string/font_gothic_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/signup"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:orientation="horizontal">
+
+        <com.hbb20.CountryCodePicker
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_black_opacity_radius_left"
+            app:ccp_contentColor="@color/white"
+            app:ccp_defaultPhoneCode="84"
+            app:ccp_showArrow="false"
+            app:ccp_showNameCode="false"
+            app:ccp_textSize="13sp" />
+
+        <View
+            android:layout_width="@dimen/_1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/fragSignUp_etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:background="@drawable/shape_black_opacity_radius_right"
+            android:gravity="center"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/fragSignUp_etLastName"
+            style="@style/editText"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="@dimen/_4dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_weight="1"
+            android:hint="@string/last_name" />
+
+        <EditText
+            android:id="@+id/fragSignUp_etFirstName"
+            style="@style/editText"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/_4dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_weight="1"
+            android:hint="@string/first_name" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/fragSignUp_etEmail"
+        style="@style/editText"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/fragSignUp_etPassword"
+        style="@style/editText"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10dp"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/fragSignUp_etConfirmPassword"
+        style="@style/editText"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10dp"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/fragSignUp_tvSignUp"
+        style="@style/button"
+        android:layout_width="@dimen/_105dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_24dp"
+        android:text="@string/signup" />
+</LinearLayout>
