@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.svs.nhatro.R;
 import com.svs.nhatro.base.BaseFragment;
 import com.svs.nhatro.utils.AppUtils;
+import com.svs.nhatro.utils.KeyboardUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -41,6 +42,7 @@ public class LoginEmailFragment extends BaseFragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_login_email, container, false);
         unbinder = ButterKnife.bind(this, view);
+        KeyboardUtils.setupUI(view, getActivity());
         initialize();
         return view;
     }
@@ -49,6 +51,9 @@ public class LoginEmailFragment extends BaseFragment {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.fragLogEmail_tvLogin:
+                if (checkValidInput()) {
+
+                }
                 break;
             case R.id.fragLogEmail_tvForgot:
                 break;
@@ -65,7 +70,7 @@ public class LoginEmailFragment extends BaseFragment {
 
     private boolean checkValidInput() {
         String error = "";
-        if (TextUtils.isEmpty(etEmail.getText()) && TextUtils.isEmpty(etPassword.getText()))
+        if (TextUtils.isEmpty(etEmail.getText()) || TextUtils.isEmpty(etPassword.getText()))
             error = getString(R.string.empty_email_password);
         else if (!AppUtils.isValidEmail(etEmail.getText().toString()))
             error = getString(R.string.valid_input_email);

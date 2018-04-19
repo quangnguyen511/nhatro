@@ -12,6 +12,7 @@ import android.widget.EditText;
 import com.svs.nhatro.R;
 import com.svs.nhatro.base.BaseFragment;
 import com.svs.nhatro.utils.AppUtils;
+import com.svs.nhatro.utils.KeyboardUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -44,11 +45,15 @@ public class SignUpFragment extends BaseFragment {
 
         View view = inflater.inflate(R.layout.fragment_sign_up, container, false);
         unbinder = ButterKnife.bind(this, view);
+        KeyboardUtils.setupUI(view,getActivity());
         return view;
     }
 
     @OnClick(R.id.fragSignUp_tvSignUp)
     public void onViewClicked() {
+        if(checkValidInput()){
+
+        }
     }
 
     private boolean checkValidInput() {

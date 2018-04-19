@@ -1,14 +1,13 @@
 package com.svs.nhatro.utils;
 
-import android.app.Dialog;
+import android.app.AlertDialog;
 import android.content.Context;
-import android.graphics.drawable.ColorDrawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
-import android.widget.TextView;
 
+import com.svs.nhatro.R;
 import com.svs.nhatro.interfaces.DialogListener;
 
 /**
@@ -24,25 +23,20 @@ public class AppUtils {
         }
         return netInfo != null && netInfo.isConnectedOrConnecting();
     }
+
     public static boolean isValidEmail(String email) {
         return !TextUtils.isEmpty(email) && android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
     }
 
     public static void showAlert(final Context context, String title, String content, @Nullable final DialogListener listener) {
-//        Dialog dialog = new Dialog(context);
-//        dialog.setContentView(R.layout.dialog_notice);
-//        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-//        TextView tvTitle = dialog.findViewById(R.id.dialogNotice_tvTitle);
-//        TextView tvContent = dialog.findViewById(R.id.dialogNotice_tvContent);
-//        TextView tvDone = dialog.findViewById(R.id.dialogNotice_tvOK);
-//        tvTitle.setText(title);
-//        tvContent.setText(content);
-//        tvDone.setOnClickListener(view -> {
-//            dialog.dismiss();
-//            if (listener != null)
-//                listener.onConfirmClicked();
-//        });
-//        dialog.setCanceledOnTouchOutside(false);
-//        dialog.show();
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setTitle(title);
+        builder.setMessage(content);
+        builder.setPositiveButton(R.string.ok, (dialogInterface, i) -> {
+            if (listener != null) {
+                listener.onConfirmClicked();
+            }
+        });
+        builder.create().show();
     }
 }
