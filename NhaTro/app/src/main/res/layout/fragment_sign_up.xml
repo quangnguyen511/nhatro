@@ -11,6 +11,7 @@
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
+        android:id="@+id/fragSignUp_imvBack"
         android:layout_width="@dimen/_20dp"
         android:layout_height="@dimen/_20dp"
         android:src="@drawable/ic_arrow_left" />
@@ -32,6 +33,7 @@
         android:orientation="horizontal">
 
         <com.hbb20.CountryCodePicker
+            android:id="@+id/fragSignUp_ccpPhone"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/shape_black_opacity_radius_left"
@@ -52,8 +54,10 @@
             android:layout_height="@dimen/_40dp"
             android:background="@drawable/shape_black_opacity_radius_right"
             android:gravity="center"
+            android:textSize="13sp"
             android:hint="@string/phone_number"
             android:inputType="phone"
+            android:textColorHint="@color/white60"
             android:textColor="@color/white" />
     </LinearLayout>
 

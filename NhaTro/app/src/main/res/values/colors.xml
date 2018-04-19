@@ -9,4 +9,5 @@
     <color name="denimBlue">#3B5998</color>
     <color name="charcoalGrey40">#664A4A4A</color>
     <color name="charcoalGrey60">#994A4A4A</color>
+    <color name="white60">#99ffffff</color>
 </resources>

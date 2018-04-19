@@ -13,6 +13,7 @@
         <item name="android:textSize">13sp</item>
         <item name="android:layout_height">@dimen/_40dp</item>
         <item name="android:background">@drawable/shape_black_opacity_radius</item>
+        <item name="android:textColorHint">@color/white60</item>
     </style>
     <style name="button">
         <item name="android:background">@drawable/shape_yellow_radius</item>

@@ -47,7 +47,7 @@ public class LoginEmailFragment extends BaseFragment {
         return view;
     }
 
-    @OnClick({R.id.fragLogEmail_tvLogin, R.id.fragLogEmail_tvForgot, R.id.fragLogEmail_tvSignUp})
+    @OnClick({R.id.fragLogEmail_tvLogin, R.id.fragLogEmail_tvForgot, R.id.fragLogEmail_tvSignUp, R.id.fragLogEmail_imvBack})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.fragLogEmail_tvLogin:
@@ -58,7 +58,10 @@ public class LoginEmailFragment extends BaseFragment {
             case R.id.fragLogEmail_tvForgot:
                 break;
             case R.id.fragLogEmail_tvSignUp:
-//                addFragment(new S);
+                addFragment(new SignUpFragment(), true);
+                break;
+            case R.id.fragLogEmail_imvBack:
+                getActivity().onBackPressed();
                 break;
         }
     }

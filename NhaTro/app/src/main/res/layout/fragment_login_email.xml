@@ -10,6 +10,7 @@
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
+        android:id="@+id/fragLogEmail_imvBack"
         android:layout_width="@dimen/_20dp"
         android:layout_height="@dimen/_20dp"
         android:src="@drawable/ic_arrow_left" />
