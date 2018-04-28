@@ -33,4 +33,5 @@
     <string name="post">Đăng tin</string>
     <string name="menu">Menu</string>
     <string name="find_around">Tìm xung quanh</string>
+    <string name="price">Price: %s</string>
 </resources>
