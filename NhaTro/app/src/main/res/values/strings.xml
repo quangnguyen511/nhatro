@@ -34,7 +34,8 @@
     <string name="menu">Menu</string>
     <string name="find_around">Tìm xung quanh</string>
     <string name="price">Price: %s</string>
-    <string name="information">Thông tin chi tiết</string>
+    <string name="detail_information">Thông tin chi tiết</string>
+    <string name="information">Thông tin</string>
     <string name="address">Địa chỉ:</string>
     <string name="square">Diện tích:</string>
     <string name="room_price">Giá phòng:</string>
@@ -42,4 +43,8 @@
     <string name="descriptioin">Mô tả:</string>
     <string name="images">Hình ảnh</string>
     <string name="hostels_near_here">Phòng trọ gần đây</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="security">Bảo mật</string>
+    <string name="history">Lịch sử</string>
+    <string name="hostel">Phòng trọ</string>
 </resources>

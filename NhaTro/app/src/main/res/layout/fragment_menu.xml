@@ -1,13 +1,58 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.svs.nhatro.fragment.menu.MenuFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/fragMenu_tvInformation"
+        style="@style/menu_title"
+        android:drawableStart="@drawable/ic_user"
+        android:text="@string/information" />
 
-</FrameLayout>
+    <View
+        style="@style/divider_vertical"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:id="@+id/fragMenu_tvHostel"
+        style="@style/menu_title"
+        android:drawableStart="@drawable/ic_home_selected"
+        android:text="@string/hostel" />
+
+    <View
+        style="@style/divider_vertical"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:id="@+id/fragMenu_tvHistory"
+        style="@style/menu_title"
+        android:drawableStart="@drawable/ic_book"
+        android:text="@string/history" />
+
+    <View
+        style="@style/divider_vertical"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:id="@+id/fragMenu_tvSecurity"
+        style="@style/menu_title"
+        android:drawableStart="@drawable/ic_lock"
+        android:text="@string/security" />
+
+    <View
+        style="@style/divider_vertical"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:id="@+id/fragMenu_tvLogOut"
+        style="@style/menu_title"
+        android:drawableStart="@drawable/ic_logout"
+        android:text="@string/logout" />
+
+    <View
+        style="@style/divider_vertical"
+        android:layout_width="match_parent" />
+</LinearLayout>

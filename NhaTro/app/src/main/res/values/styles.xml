@@ -27,7 +27,7 @@
     <style name="divider_vertical">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">@dimen/_1dp</item>
-        <item name="android:background">@color/warmGrey50</item>
+        <item name="android:background">@color/warmGrey</item>
     </style>
     <style name="detail_title">
         <item name="fontPath">@string/font_gothic_bold</item>
@@ -35,5 +35,13 @@
         <item name="android:layout_marginTop">@dimen/_10dp</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="menu_title">
+        <item name="android:layout_height">@dimen/_45dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingStart">@dimen/_16dp</item>
+        <item name="android:paddingEnd">@dimen/_16dp</item>
+        <item name="android:drawablePadding">@dimen/_14dp</item>
+        <item name="android:gravity">center_vertical</item>
     </style>
 </resources>
