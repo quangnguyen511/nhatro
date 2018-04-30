@@ -57,7 +57,7 @@ public class HomeFragment extends BaseFragment implements ItemListener {
 
     @Override
     public void onItemClicked(int pos) {
-
+        addFragment(new HostelDetailFragment(),true);
     }
 
     @Override

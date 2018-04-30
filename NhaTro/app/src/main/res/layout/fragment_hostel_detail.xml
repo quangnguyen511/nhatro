@@ -1,0 +1,314 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    tools:context="com.svs.nhatro.fragment.home.HostelDetailFragment"
+    tools:ignore="MissingPrefix">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_16dp">
+
+            <ImageView
+                android:id="@+id/fragHostelDetail_imvTop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_hostel" />
+
+            <ImageView
+                android:id="@+id/fragHostelDetail_imvBack"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:layout_margin="@dimen/_8dp"
+                android:src="@drawable/ic_arrow_left"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8dp"
+                android:background="@drawable/shape_black_opacity_radius"
+                android:orientation="vertical"
+                android:padding="@dimen/_8dp"
+                app:layout_constraintBottom_toBottomOf="@id/fragHostelDetail_imvTop"
+                app:layout_constraintStart_toStartOf="@id/fragHostelDetail_imvTop">
+
+                <TextView
+                    android:id="@+id/fragHostelDetail_tvAddress"
+                    fontPath="@string/font_gothic_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:textColor="@color/white"
+                    tools:ignore="MissingPrefix" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fragHostelDetail_tvPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price:--"
+                        android:textColor="@color/white" />
+
+                    <View
+                        android:layout_width="@dimen/_1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/_24dp"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:id="@+id/fragHostelDetail_tvPhoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/_16dp"
+                        android:drawableStart="@drawable/ic_phone"
+                        android:text="--"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/fragHostelDetail_imvFavorite"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:layout_margin="@dimen/_8dp"
+                android:src="@drawable/ic_favorite"
+                app:layout_constraintBottom_toBottomOf="@id/fragHostelDetail_imvTop"
+                app:layout_constraintEnd_toStartOf="@id/fragHostelDetail_imvShare" />
+
+            <ImageView
+                android:id="@+id/fragHostelDetail_imvShare"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:layout_margin="@dimen/_8dp"
+                android:src="@drawable/ic_share"
+                app:layout_constraintBottom_toBottomOf="@id/fragHostelDetail_imvTop"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textView1"
+                fontPath="@string/font_gothic_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:text="@string/information"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragHostelDetail_imvTop" />
+
+            <View
+                style="@style/divider_vertical"
+                android:layout_marginEnd="@dimen/_8dp"
+                android:layout_marginStart="@dimen/_8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView1" />
+
+            <com.svs.nhatro.others.view.CircleImageView
+                android:id="@+id/fragHostelDetail_imvUser"
+                android:layout_width="@dimen/_40dp"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_hostel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView1" />
+
+            <TextView
+                android:id="@+id/fragHostelDetail_tvOwnerName"
+                fontPath="@string/font_gothic_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4dp"
+                android:paddingEnd="@dimen/_16dp"
+                android:paddingStart="@dimen/_16dp"
+                android:text="--"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/fragHostelDetail_imvUser"
+                app:layout_constraintTop_toTopOf="@id/fragHostelDetail_imvUser" />
+
+            <TextView
+                android:id="@+id/fragHostelDetail_tvOwnerDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/_16dp"
+                android:paddingStart="@dimen/_16dp"
+                android:text="--"
+                android:textSize="8sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/fragHostelDetail_tvOwnerName"
+                app:layout_constraintTop_toBottomOf="@id/fragHostelDetail_tvOwnerName" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/detail_title"
+                android:layout_marginTop="@dimen/_16dp"
+                android:text="@string/address"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragHostelDetail_imvUser" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/detail_title"
+                android:text="@string/square"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/detail_title"
+                android:text="@string/room_price"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/detail_title"
+                android:text="@string/contact"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView4" />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/detail_title"
+                android:text="@string/descriptioin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView5" />
+
+            <TextView
+                android:id="@+id/fragHostelDetail_tvAddressDetail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/_8dp"
+                android:paddingStart="@dimen/_8dp"
+                android:text="--"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/textView2"
+                app:layout_constraintTop_toTopOf="@id/textView2" />
+
+            <TextView
+                android:id="@+id/fragHostelDetail_tvSquare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/_8dp"
+                android:paddingStart="@dimen/_8dp"
+                android:text="--"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/textView3"
+                app:layout_constraintTop_toTopOf="@id/textView3" />
+
+            <TextView
+                android:id="@+id/fragHostelDetail_tvPriceDetail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/_8dp"
+                android:paddingStart="@dimen/_8dp"
+                android:text="--"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/textView4"
+                app:layout_constraintTop_toTopOf="@id/textView4" />
+
+            <TextView
+                android:id="@+id/fragHostelDetail_tvContact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/_8dp"
+                android:paddingStart="@dimen/_8dp"
+                android:text="--"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/fragHostelDetail_tvPriceDetail"
+                app:layout_constraintTop_toTopOf="@id/textView5" />
+
+            <TextView
+                android:id="@+id/fragHostelDetail_tvDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/_8dp"
+                android:paddingStart="@dimen/_8dp"
+                android:text="--"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/fragHostelDetail_tvContact"
+                app:layout_constraintTop_toTopOf="@id/textView6" />
+
+            <View
+                android:id="@+id/view2"
+                style="@style/divider_vertical"
+                android:layout_marginEnd="@dimen/_8dp"
+                android:layout_marginStart="@dimen/_8dp"
+                android:layout_marginTop="@dimen/_24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragHostelDetail_tvDescription" />
+
+            <TextView
+                android:id="@+id/textView7"
+                fontPath="@string/font_gothic_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:text="@string/images"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view2" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragHostelDetail_rvImages"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_90dp"
+                android:layout_margin="@dimen/_8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:scrollIndicators="none"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView7" />
+            <View
+                android:id="@+id/view3"
+                style="@style/divider_vertical"
+                android:layout_marginEnd="@dimen/_8dp"
+                android:layout_marginStart="@dimen/_8dp"
+                android:layout_marginTop="@dimen/_24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragHostelDetail_rvImages" />
+            <TextView
+                android:id="@+id/textView8"
+                fontPath="@string/font_gothic_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:text="@string/hostels_near_here"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view3" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragHostelDetail_rvHostels"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView8"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/_16dp"/>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>
