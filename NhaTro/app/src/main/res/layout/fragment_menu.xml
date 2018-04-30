@@ -6,6 +6,7 @@
     tools:context="com.svs.nhatro.fragment.menu.MenuFragment">
 
     <!-- TODO: Update blank fragment layout -->
+    <include layout="@layout/base_actionbar_title"/>
     <TextView
         android:id="@+id/fragMenu_tvInformation"
         style="@style/menu_title"

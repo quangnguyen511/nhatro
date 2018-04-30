@@ -47,4 +47,7 @@
     <string name="security">Bảo mật</string>
     <string name="history">Lịch sử</string>
     <string name="hostel">Phòng trọ</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="save">Lưu</string>
 </resources>

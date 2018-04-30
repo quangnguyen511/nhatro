@@ -4,7 +4,7 @@
     android:id="@+id/actionbarTitle_tvTitle"
     fontPath="@string/font_gothic_bold"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_56dp"
+    android:layout_height="@dimen/_40dp"
     android:background="@color/colorPrimary"
     android:gravity="center"
     android:text="Title"
