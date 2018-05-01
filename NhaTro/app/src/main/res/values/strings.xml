@@ -25,7 +25,6 @@
     <string name="phone_number">Số điện thoại</string>
     <string name="first_name">Tên</string>
     <string name="last_name">Họ</string>
-    <string name="confirm_password">Xác nhận mật khẩu</string>
     <string name="empty_input">Vui lòng nhập đầy đủ thông tin</string>
     <string name="ok">OK</string>
     <string name="home">Trang chủ</string>
@@ -40,7 +39,8 @@
     <string name="square">Diện tích:</string>
     <string name="room_price">Giá phòng:</string>
     <string name="contact">Liên hệ:</string>
-    <string name="descriptioin">Mô tả:</string>
+    <string name="detail_description">Mô tả chi tiết</string>
+    <string name="description">Mô tả:</string>
     <string name="images">Hình ảnh</string>
     <string name="hostels_near_here">Phòng trọ gần đây</string>
     <string name="logout">Đăng xuất</string>
@@ -50,4 +50,6 @@
     <string name="new_password">Mật khẩu mới</string>
     <string name="confirm_password">Xác nhận mật khẩu</string>
     <string name="save">Lưu</string>
+    <string name="currency">VND</string>
+    <string name="post_button">Đăng</string>
 </resources>

@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.svs.nhatro.R;
+import com.svs.nhatro.base.BaseFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -17,7 +18,7 @@ import butterknife.Unbinder;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ImageFragment extends Fragment {
+public class ImageFragment extends BaseFragment {
 
     @BindView(R.id.fragImage_imvImage)
     ImageView imvImage;

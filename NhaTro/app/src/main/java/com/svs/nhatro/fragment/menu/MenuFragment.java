@@ -40,6 +40,7 @@ public class MenuFragment extends BaseFragment {
             case R.id.fragMenu_tvHistory:
                 break;
             case R.id.fragMenu_tvSecurity:
+                addFragment(new ChangePassFragment(), true);
                 break;
             case R.id.fragMenu_tvLogOut:
                 break;

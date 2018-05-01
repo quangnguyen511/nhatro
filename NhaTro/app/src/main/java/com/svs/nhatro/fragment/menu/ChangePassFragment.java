@@ -9,15 +9,17 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 
 import com.svs.nhatro.R;
+import com.svs.nhatro.base.BaseFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import butterknife.Unbinder;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ChangePassFragment extends Fragment {
+public class ChangePassFragment extends BaseFragment {
 
 
     @BindView(R.id.fragChangePass_etNewPass)
@@ -40,9 +42,14 @@ public class ChangePassFragment extends Fragment {
         return view;
     }
 
+    @OnClick(R.id.fragChangePass_tvSave)
+    public void onViewClicked() {
+    }
+
     @Override
     public void onDestroyView() {
         super.onDestroyView();
         unbinder.unbind();
     }
+
 }

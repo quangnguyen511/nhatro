@@ -51,6 +51,7 @@
         android:textColorHint="@color/warmGrey" />
 
     <TextView
+        android:id="@+id/fragChangePass_tvSave"
         style="@style/button"
         android:layout_width="@dimen/_105dp"
         android:layout_height="@dimen/_30dp"
