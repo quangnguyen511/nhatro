@@ -15,5 +15,15 @@ import retrofit2.http.POST;
  **/
 
 public interface ApiAuth {
+    @POST("members/postLogin")
+    Call<JsonObject> postLogin(@Body Map<String, Object> body);
 
+    @POST("members/postSignup")
+    Call<JsonObject> postSignup(@Body Map<String, Object> body);
+
+    @POST("motel/send-mail-again")
+    Call<JsonObject> postSendMailAgain(@Body Map<String, Object> body);
+
+    @GET("members/getLogout")
+    Call<JsonObject> getLogOut(@Header("Authorization") String authorization);
 }

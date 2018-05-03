@@ -1,209 +1,211 @@
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    android:orientation="vertical"
     tools:context="com.svs.nhatro.fragment.post.PostFragment"
     tools:ignore="MissingPrefix">
-
-    <LinearLayout
+    <include layout="@layout/base_actionbar_title" />
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/_16dp">
-
-        <include layout="@layout/base_actionbar_title" />
-
-        <TextView
-            fontPath="@string/font_gothic_bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_12dp"
-            android:layout_marginTop="@dimen/_30dp"
-            android:text="@string/information" />
-
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_12dp"
-            android:layout_marginStart="@dimen/_12dp"
-            android:layout_marginTop="@dimen/_16dp"
-            android:background="@drawable/shape_white_border_black_radius"
-            android:paddingBottom="@dimen/_10dp">
-
-            <TextView
-                android:id="@+id/textView2"
-                style="@style/detail_title"
-                android:text="@string/address"
-                app:layout_constraintBaseline_toBaselineOf="@id/fragPost_etAddress"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/textView3"
-                style="@style/detail_title"
-                android:text="@string/square"
-                app:layout_constraintBaseline_toBaselineOf="@id/fragPost_etSquare"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textView2" />
-
-            <TextView
-                android:id="@+id/textView4"
-                style="@style/detail_title"
-                android:text="@string/room_price"
-                app:layout_constraintBaseline_toBaselineOf="@id/fragPost_etPrice"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textView3" />
-
-            <TextView
-                android:id="@+id/textView5"
-                style="@style/detail_title"
-                android:text="@string/contact"
-                app:layout_constraintBaseline_toBaselineOf="@id/fragPost_etContact"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textView4" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_8dp"
-                android:text="@string/currency"
-                app:layout_constraintBaseline_toBaselineOf="@id/textView4"
-                app:layout_constraintEnd_toEndOf="parent" />
-
-            <EditText
-                android:id="@+id/fragPost_etAddress"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_30dp"
-                android:backgroundTint="@color/warmGrey"
-                android:hint="123 Qua  Trung , P.11, Q. Gò Vấp. TpHCM"
-                android:padding="@dimen/_8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@id/guideline"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <EditText
-                android:id="@+id/fragPost_etSquare"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_30dp"
-                android:backgroundTint="@color/warmGrey"
-                android:hint="20"
-                android:padding="@dimen/_8dp"
-                app:layout_constraintEnd_toStartOf="@id/textView7"
-                app:layout_constraintStart_toStartOf="@id/guideline"
-                app:layout_constraintTop_toBottomOf="@id/fragPost_etAddress" />
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_8dp"
-                android:text="m2"
-                app:layout_constraintBaseline_toBaselineOf="@id/textView3"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/fragPost_etAddress" />
-
-            <EditText
-                android:id="@+id/fragPost_etPrice"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_30dp"
-                android:backgroundTint="@color/warmGrey"
-                android:hint="1.000.000"
-                android:padding="@dimen/_8dp"
-                app:layout_constraintEnd_toStartOf="@id/textView8"
-                app:layout_constraintStart_toStartOf="@id/guideline"
-                app:layout_constraintTop_toBottomOf="@id/fragPost_etSquare" />
-
-            <EditText
-                android:id="@+id/fragPost_etContact"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_30dp"
-                android:backgroundTint="@color/warmGrey"
-                android:hint="09012345678"
-                android:padding="@dimen/_8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@id/guideline"
-                app:layout_constraintTop_toBottomOf="@id/fragPost_etPrice" />
-
-            <android.support.constraint.Guideline
-                android:id="@+id/guideline"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_end="@dimen/_280dp" />
-        </android.support.constraint.ConstraintLayout>
-
-        <TextView
-            fontPath="@string/font_gothic_bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_16dp"
-            android:layout_marginStart="@dimen/_12dp"
-            android:layout_marginTop="@dimen/_16dp"
-            android:text="@string/detail_description" />
-
-        <EditText
-            android:id="@+id/fragPost_etDescription"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_100dp"
-            android:layout_marginEnd="@dimen/_12dp"
-            android:layout_marginStart="@dimen/_12dp"
-            android:background="@drawable/shape_white_border_black_radius"
-            android:gravity="top"
-            android:hint="Có chỗ để xe, có thang máy..."
-            android:padding="@dimen/_8dp" />
-
-        <TextView
-            fontPath="@string/font_gothic_bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_16dp"
-            android:layout_marginStart="@dimen/_12dp"
-            android:layout_marginTop="@dimen/_16dp"
-            android:text="@string/images" />
-
+        android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_16dp">
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/fragPost_rvImages"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/_80dp" />
+            <TextView
+                fontPath="@string/font_gothic_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12dp"
+                android:layout_marginTop="@dimen/_12dp"
+                android:text="@string/information" />
 
-            <FrameLayout
-                android:id="@+id/fragPost_frmAddImage"
-                android:layout_width="@dimen/_80dp"
-                android:layout_height="@dimen/_80dp"
-                android:layout_marginStart="@dimen/_8dp"
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12dp"
+                android:layout_marginStart="@dimen/_12dp"
+                android:layout_marginTop="@dimen/_16dp"
                 android:background="@drawable/shape_white_border_black_radius"
-                android:padding="@dimen/_8dp">
+                android:paddingBottom="@dimen/_10dp">
 
-                <View
-                    android:layout_width="@dimen/_1dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal"
-                    android:background="@color/warmGrey" />
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/detail_title"
+                    android:text="@string/address"
+                    app:layout_constraintBaseline_toBaselineOf="@id/fragPost_etAddress"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_1dp"
-                    android:layout_gravity="center_vertical"
-                    android:background="@color/warmGrey" />
-            </FrameLayout>
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/detail_title"
+                    android:text="@string/square"
+                    app:layout_constraintBaseline_toBaselineOf="@id/fragPost_etSquare"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/detail_title"
+                    android:text="@string/room_price"
+                    app:layout_constraintBaseline_toBaselineOf="@id/fragPost_etPrice"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/detail_title"
+                    android:text="@string/contact"
+                    app:layout_constraintBaseline_toBaselineOf="@id/fragPost_etContact"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView4" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:text="@string/currency"
+                    app:layout_constraintBaseline_toBaselineOf="@id/textView4"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <EditText
+                    android:id="@+id/fragPost_etAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30dp"
+                    android:backgroundTint="@color/warmGrey"
+                    android:hint="123 Quang  Trung , P.11, Q. Gò Vấp. TpHCM"
+                    android:padding="@dimen/_8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/guideline"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/fragPost_etSquare"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30dp"
+                    android:backgroundTint="@color/warmGrey"
+                    android:hint="20"
+                    android:padding="@dimen/_8dp"
+                    app:layout_constraintEnd_toStartOf="@id/textView7"
+                    app:layout_constraintStart_toStartOf="@id/guideline"
+                    app:layout_constraintTop_toBottomOf="@id/fragPost_etAddress" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:text="m2"
+                    app:layout_constraintBaseline_toBaselineOf="@id/textView3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/fragPost_etAddress" />
+
+                <EditText
+                    android:id="@+id/fragPost_etPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30dp"
+                    android:backgroundTint="@color/warmGrey"
+                    android:hint="1.000.000"
+                    android:padding="@dimen/_8dp"
+                    app:layout_constraintEnd_toStartOf="@id/textView8"
+                    app:layout_constraintStart_toStartOf="@id/guideline"
+                    app:layout_constraintTop_toBottomOf="@id/fragPost_etSquare" />
+
+                <EditText
+                    android:id="@+id/fragPost_etContact"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30dp"
+                    android:backgroundTint="@color/warmGrey"
+                    android:hint="09012345678"
+                    android:padding="@dimen/_8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/guideline"
+                    app:layout_constraintTop_toBottomOf="@id/fragPost_etPrice" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="@dimen/_280dp" />
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                fontPath="@string/font_gothic_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_12dp"
+                android:layout_marginStart="@dimen/_12dp"
+                android:layout_marginTop="@dimen/_12dp"
+                android:text="@string/detail_description" />
+
+            <EditText
+                android:id="@+id/fragPost_etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80dp"
+                android:layout_marginEnd="@dimen/_12dp"
+                android:layout_marginStart="@dimen/_12dp"
+                android:background="@drawable/shape_white_border_black_radius"
+                android:gravity="top"
+                android:hint="Có chỗ để xe, có thang máy..."
+                android:padding="@dimen/_8dp" />
+
+            <TextView
+                fontPath="@string/font_gothic_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_12dp"
+                android:layout_marginStart="@dimen/_12dp"
+                android:layout_marginTop="@dimen/_12dp"
+                android:text="@string/images" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fragPost_rvImages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_80dp" />
+
+                <FrameLayout
+                    android:id="@+id/fragPost_frmAddImage"
+                    android:layout_width="@dimen/_80dp"
+                    android:layout_height="@dimen/_80dp"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:background="@drawable/shape_white_border_black_radius"
+                    android:padding="@dimen/_8dp">
+
+                    <View
+                        android:layout_width="@dimen/_1dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/warmGrey" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/warmGrey" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fragPost_tvPost"
+                style="@style/button"
+                android:layout_width="@dimen/_105dp"
+                android:layout_height="@dimen/_30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_16dp"
+                android:text="@string/post_button" />
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/fragPost_tvPost"
-            style="@style/button"
-            android:layout_width="@dimen/_105dp"
-            android:layout_height="@dimen/_30dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/_16dp"
-            android:text="@string/post_button" />
-    </LinearLayout>
-
-</android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

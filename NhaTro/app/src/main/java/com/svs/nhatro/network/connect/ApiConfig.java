@@ -11,8 +11,8 @@ public class ApiConfig {
         }
         switch (type) {
             case DEV:
-                connection.setBaseURL("http://fxchange.acc-svrs.com/api/v1/");
-                connection.setApiKey("DEVACCRMLEXCHANGE03052017");
+                connection.setBaseURL("http://192.168.100.94/api/");
+                connection.setApiKey("DEVNATSVSMOTEL01031995");
                 break;
 //            case STAGING:
 //                connection.setBaseURL("http://stg.fxchange.rmlbs.co/api/v1/");

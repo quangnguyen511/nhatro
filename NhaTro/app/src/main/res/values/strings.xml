@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">NhaTro</string>
     <string name="error_network">Network Error</string>
-    <string name="error_no_internet">No internet connection. Please check again!</string>
+    <string name="error_no_internet">Vui lòng kiểm tra lại đường truyền mạng</string>
     <string name="error_parse_json">okhttp3.internal.http.RealResponseBody</string>
-    <string name="error">Error</string>
-    <string name="error_server">Error retrieving information from server</string>
+    <string name="error">Thông báo</string>
+    <string name="error_server">Đã xảy ra lỗi, xin hãy thử lại!</string>
     <string name="error_parse_type"><![CDATA[Value <!DOCTYPE of type]]></string>
 
     <!-- TODO: Remove or change this placeholder text -->
